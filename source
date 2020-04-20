@@ -1,0 +1,296 @@
+import math
+
+print('HELLO WELCOME TO THIS PROGRAM')
+print('     ')
+print('BEFORE WE START, TELL ME SOMETHING ABOUT YOUR SELF')
+
+
+def name():
+    print('     ')
+    print('WHAT IS YOUR NAME ?')
+    userinputname = ['JASON', 'jason']
+    username=input()
+    if username not in userinputname:
+        print('THIS PROGRAM IS DESIGNED FOR JASON')
+        print('     ')
+        print('PLEASE ENTER THE CORRECT NAME')
+        name()
+
+    else:
+        print('                             HELLO JASON WELCOME')
+
+def age():
+    print('     ')
+    print('JASON, HOW OLD ARE YOU?')
+    userage=input()
+    userinputage = ['7']
+    if userage not in userinputage:
+        print('NO, THAT IS NOT YOUR AGE!')
+        print('PLEASE ENTER CORRECT AGE.')
+        age()
+    else:
+        print('YES JASON, YOU ARE 7 YEARS OLD ')
+
+
+
+
+
+def question1():
+    print('         WHAT IS 1 + 1 = ?')
+    mathinput1=input('ENTER THE ANSWER: ')
+    if ((mathinput1>='a' and mathinput1<='z') or (mathinput1>='A' and mathinput1<='Z')):
+        print(mathinput1, 'IS NOT A NUMBER.\n')
+        print('PLEASE ENTER A NUMBER')
+        question1()
+    elif int(mathinput1) > 2:
+        print('     ')
+        print('THAT IS TOO BIG')
+        print('PLEASE TRY AGAIN')
+        print('     ')
+        question1()
+    elif int(mathinput1) < 2:
+        print('     ')
+        print('THAT IS TOO SMALL')
+        print('PLEASE TRY AGAIN')
+        print('     ')
+        question1()
+    else:
+        print('     ')
+        print('YES, JASON THAT IS CORRECT')
+        print('         1 + 1 = 2')
+        print('LET GO TO THE NEXT QUESTION')
+        print('     ')
+
+def question2():
+    print('         WHAT IS 2 x 2 = ?')
+    mathinput2=input('ENTER THE ANSWER: ')
+    if ((mathinput2>='a' and mathinput2<='z') or (mathinput2>='A' and mathinput2<='Z')):
+        print(mathinput2, 'IS NOT A NUMBER.\n')
+        print('PLEASE ENTER A NUMBER')
+        question2()
+    elif int(mathinput2) > 4:
+        print('     ')
+        print('THAT IS TOO BIG')
+        print('PLEASE TRY AGAIN')
+        print('     ')
+        question2()
+    elif int(mathinput2) < 4:
+        print('     ')
+        print('THAT IS TOO SMALL')
+        print('PLEASE TRY AGAIN')
+        print('     ')
+        question2()
+    else:
+        print('     ')
+        print('YES, JASON THAT IS CORRECT')
+        print('         2 x 2 = 4')
+        print('LET GO TO THE NEXT QUESTION')
+        print('     ')
+
+def question3():
+    print('         WHAT IS 3 / 3 = ?')
+    mathinput3=input('ENTER THE ANSWER: ')
+    if ((mathinput3>='a' and mathinput3<='z') or (mathinput3>='A' and mathinput3<='Z')):
+        print(mathinput3, 'IS NOT A NUMBER.\n')
+        print('PLEASE ENTER A NUMBER')
+        question3()
+    elif int(mathinput3) > 1:
+        print('     ')
+        print('THAT IS TOO BIG')
+        print('PLEASE TRY AGAIN')
+        print('     ')
+        question3()
+    elif int(mathinput3) < 1:
+        print('     ')
+        print('THAT IS TOO SMALL')
+        print('PLEASE TRY AGAIN')
+        print('     ')
+        question3()
+    else:
+        print('     ')
+        print('YES, JASON THAT IS CORRECT')
+        print('         3 / 3 = 1')
+        print('LET GO TO THE NEXT QUESTION')
+        print('     ')
+
+def question4():
+    print('         WHAT IS 5 - 5 = ?')
+    mathinput4=input('ENTER THE ANSWER: ')
+    if ((mathinput4>='a' and mathinput4<='z') or (mathinput4>='A' and mathinput4<='Z')):
+        print(mathinput4, 'IS NOT A NUMBER.\n')
+        print('PLEASE ENTER A NUMBER')
+        question4()
+    elif int(mathinput4) > 0:
+        print('     ')
+        print('THAT IS TOO BIG')
+        print('PLEASE TRY AGAIN')
+        print('     ')
+        question4()
+    elif int(mathinput4) < 0:
+        print('     ')
+        print('THAT IS TOO SMALL')
+        print('PLEASE TRY AGAIN')
+        print('     ')
+        question4()
+    else:
+        print('     ')
+        print('YES, JASON THAT IS CORRECT')
+        print('         5 - 5 = 0')
+        print('LET GO TO THE NEXT QUESTION')
+        print('     ')
+
+def question5():
+    print('         HOW MANY PEOPLE LIVES IN YOUR FAMILY?')
+    mathinput5=input('ENTER THE ANSWER: ')
+    if ((mathinput5>='a' and mathinput5<='z') or (mathinput5>='A' and mathinput5<='Z')):
+        print(mathinput5, 'IS NOT A NUMBER.\n')
+        print('PLEASE ENTER A NUMBER')
+        question5()
+    elif int(mathinput5) > 5:
+        print('     ')
+        print('THAT IS TOO MANY, COUNT AGAIN')
+        print('     ')
+        question5()
+    elif int(mathinput5) < 5:
+        print('     ')
+        print('THAT IS TOO LITTLE, COUNT AGAIN')
+        print('     ')
+        question5()
+    else:
+        print('     ')
+        print('YES, JASON THAT IS CORRECT')
+        print('         THERE ARE 5 PEOPLES IN THIS HOUSE')
+        print('             Daddy AN   :      +1')
+        print('             Mommy TRANG:      +1')
+        print('             Grandma BOT:      +1')
+        print('             Grandpa MAI:      +1')
+        print('             YOURSELF JASON:   +1')
+        print('                            -------')
+        print('                       Total:   5  ')
+        print('     ')
+
+def question6():
+    print('         WHAT IS 150 - 100 = ?')
+    mathinput6=input('ENTER THE ANSWER: ')
+    if ((mathinput6>='a' and mathinput6<='z') or (mathinput6>='A' and mathinput6<='Z')):
+        print(mathinput6, 'IS NOT A NUMBER.\n')
+        print('PLEASE ENTER A NUMBER')
+        question6()
+    elif int(mathinput6) > 50:
+        print('     ')
+        print('THAT IS TOO BIG, COUNT AGAIN')
+        print('     ')
+        question6()
+    elif int(mathinput6) < 50:
+        print('     ')
+        print('THAT IS TOO SMALL, COUNT AGAIN')
+        print('     ')
+        question6()
+    else:
+        print('     ')
+        print('YES, JASON THAT IS CORRECT')
+        print('         150 - 100 = 50')
+        print('LET GO TO THE NEXT QUESTION')
+        print('     ')
+
+def question7():
+    print('         WHAT IS 10 - 2 x 2 = ?')
+    print('         REMINDER: MULTIPLY FIRST THEN SUBTRACT LATER ')
+    mathinput7=input('ENTER THE ANSWER: ')
+    if ((mathinput7>='a' and mathinput7<='z') or (mathinput7>='A' and mathinput7<='Z')):
+        print(mathinput7, 'IS NOT A NUMBER.\n')
+        print('PLEASE ENTER A NUMBER')
+        question7()
+    elif int(mathinput7) > 6:
+        print('     ')
+        print('THAT IS TOO BIG, COUNT AGAIN')
+        print('     ')
+        question7()
+    elif int(mathinput7) < 6:
+        print('     ')
+        print('THAT IS TOO SMALL, COUNT AGAIN')
+        print('     ')
+        question7()
+    else:
+        print('     ')
+        print('YES, JASON THAT IS CORRECT')
+        print('         10 - (2 x 2) = 6')
+        print('         FIRST MULTIPLY 2 x 2 = 4')
+        print('         THEN SUBTRACT  10 - 4 = 6')
+        print('LET GO TO THE NEXT QUESTION')
+        print('     ')
+
+def question8():
+    print('        WHAT IS YOUR GRANDMA NAME?')
+    print('        3 LETTERS')
+    inputlist= ['BOT', 'bot']
+    input1=input('PLEASE ENTER LETTERS HERE: ')
+    if input1 not in inputlist:
+        print('NO JASON, THAT IS NOT HER NAME')
+        print('     ')
+        print('TRY AGAIN')
+        question8()
+    else:
+        print('     ')
+        print('YES YOUR GRANDMA NAME IS: BOT')
+        print('     ')
+
+def question9():
+    print('        WHAT IS YOUR MOM NAME?')
+    print('        5 LETTERS')
+    inputlist2= ['TRANG', 'trang']
+    input2=input('PLEASE ENTER LETTERS HERE: ')
+    if input2 not in inputlist2:
+        print('NO JASON, THAT IS NOT HER NAME')
+        print('     ')
+        print('TRY AGAIN')
+        question9()
+    else:
+        print('     ')
+        print('YES YOUR MOM NAME IS: TRANG')
+        print('     ')
+
+
+
+
+
+
+name()
+age()
+print('     ')
+print('JASON WE WILL COVER SOME BASIC MATH')
+
+question1()
+
+question2()
+
+question3()
+
+question4()
+
+question5()
+
+print('NOW THAT WAS FUN RIGHT ?')
+print('     ')
+print('NOW LET DO SOME ADVANCES MATH')
+print('     ')
+print('ARE YOU READY?')
+print('     ')
+userreadyinput1 = ['YES', 'yes']
+userreadyinput=input('PLEASE ANSWER "YES" or "NO": ')
+if userreadyinput not in userreadyinput1:
+        print('SORRY YOU ARE A CHICKEN')
+        print('     ')
+else:
+        print('     ')
+        print('YOU DOING A GOOD JOB BOY')
+        question6()
+        question7()
+        question8()
+        question9()
+
+
+
+print('             THANK YOU JASON FOR COMPLETE THIS PROGRAM, YOU ARE A GENIUS, GOOD JOB AND KEEP IT UP')
+
+
